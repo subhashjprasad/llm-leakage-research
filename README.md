@@ -23,3 +23,25 @@ We use three controls:
 3. Repeat-sampling noise floor: 5 runs per question to reduce sampling variance
 
 The elicitation prompt asks the model to forecast as of the market open date using only the information available then, and return a JSON object with a `probability` field.
+
+### Resources
+1. Polymarket Gamma API (`gamma-api.polymarket.com/markets`) for market metadata
+2. Polymarket Data API v2 (`data-api.polymarket.com/v2/prices-history`) tested but returned empty data for resolved markets
+3. Anthropic Python SDK 1.6.0 (`claude-haiku-4-5-20251001`) for LLM calls
+4. Anthropic model documentation for training cutoff verification
+
+Computation proceeded locally
+
+### Results
+#### H1 (leakage gap)
+For the leakage gap, the pre-cutoff Brier = 0.208 and the post-cutoff Brier = 0.054. The gap = -0.154 (95% CI: -0.281 to -0.037), well above the noise floor of 0.0013. The gap is in the opposite direction from H1's prediction: the model performs better on post-cutoff questions.
+
+The reversal is most likely due to selection. The post-cutoff questions are dominated by low-probability tail-risk questions (nuclear detonation, Tether insolvency, USDT depeg, Putin removed, Khamenei removed, Ukraine joins NATO). These are easy questions: the base rate is low and the model's structural prior is well-calibrated. The pre-cutoff questions have more competitive, balanced questions (election margins, box office cutoffs, leadership races) where the model made more errors.
+
+The errors in the top 20 misses confirm this: 11 of the 20 are `world_model` errors (the model's factual priors were wrong), 7 are `overconfident` (Fed rate-cuts, where the model distributed probability uniformly across mutually exclusive buckets), and 2 are `resolution_criteria` errors (NATO by March 31 and Avatar by January 31, where the model's pre-cutoff knowledge of the likely outcome dominated over the specific deadline in the resolution criteria). There were no `ambiguous` cases.
+
+#### H2 (structural baseline)
+The pre-cutoff full Brier = 0.208, stripped = 0.135, gap = -0.055 (CI: -0.195 to 0.059) and not significant. The post-cutoff full Brier = 0.054, stripped = 0.139, gap = 0.080 (CI: 0.004 to 0.166) and significant. This is again reversed, as removing specifics degrades performance on post-cutoff questions, consistent with the model relying on structural priors rather than recalled outcomes.
+
+#### H3 (crowd comparison)
+The model Brier = 0.054 vs uninformed 0.5-prior baseline = 0.250, gap = -0.196 (CI: -0.222 to -0.162). The model beats the baseline. This is limited by the absence of opening crowd prices.
