@@ -45,3 +45,21 @@ The pre-cutoff full Brier = 0.208, stripped = 0.135, gap = -0.055 (CI: -0.195 to
 
 #### H3 (crowd comparison)
 The model Brier = 0.054 vs uninformed 0.5-prior baseline = 0.250, gap = -0.196 (CI: -0.222 to -0.162). The model beats the baseline. This is limited by the absence of opening crowd prices.
+
+### Research Direction
+This study joins work on benchmark contamination and the validity of forecasting as an evaluation signal. Since forecasting accuracy is used to select models for deployment in agentic settings, justify confidence thresholds, and design training curriculum, the accuracy signal being corrupted by training data leakage can make those decisions unreliable. Specifically, the corruption would grow as more resolved questions accumulate in the training data, leading benchmark performance to improve without an increase in capability. Distinguishing recall from reasoning is therefore necessary before forecasting benchmarks can be reliably used to make capability comparisons across models.
+
+### Limitations
+The reversed H1 result isn't evidence that contamination isn't present. It could possibly be that contamination is present but masked by different question difficulty between the question cohorts. With n=19/20 per cohort, the confidence interval is quite wide, so true contamination might be indistinguishable from zero at this sample size.
+
+The result also doesn't show that the model's post-cutoff accuracy is due to reasoning, as the easy-question selection effect might explain the same data without a greater generalization capability.
+
+H3 compares the model against a 0.5 uninformed prior rather than the actual crowd price at market open (Polymarket doesn't retain historical prices for resolved markets). This makes H3 uninterpretable as a claim about whether the model outperforms the market.
+
+To improve this study, it would need:
+1. question cohorts similar in difficulty (not just category and duration)
+2. n >= 100 per cohort
+3. opening crowd prices from live integration or some other methods
+
+### AI Tool Usage
+I used Claude Code extensively throughout this study for ideation and execution. After providing the research direction, I conversed with Claude to formulate the ideas for how to test the hypotheses. Claude wrote the scripts, diagnosed and fixed API compatibility issues, and ran the experiments. The data collection, filtering decisions, and configuration choices were reviewed before the phase proceeded. The error decomposition was performed manually without model assistance. The elicitation prompt was fixed before scores were observed and wasn't modified afterward. This writeup was human-written, while conversing with Claude to fill in implementation gaps and external context.
