@@ -1,0 +1,25 @@
+model:
+  name: "claude-haiku-4-5-20251001"
+  # Source: https://platform.claude.com/docs/en/docs/about-claude/models/all-models (fetched 2026-09-15)
+  # Training data cutoff: July 2025. Reliable knowledge cutoff: February 2025.
+  # Coverage thins between Feb 2025 and Jul 2025. Use training cutoff as split date
+  # and widen pre-cutoff buffer to 90 days to avoid sampling from the thin zone.
+  training_cutoff: "2025-07-01"
+  temperature: 0.7
+  runs_per_question: 5
+
+sampling:
+  target_pool_size: 400
+  questions_per_cohort: 20
+  min_volume_usd: 10000
+  min_duration_days: 7
+  # Asymmetric buffers: pre-cutoff side is wider to avoid thin coverage zone.
+  cutoff_buffer_pre_days: 90   # pre-cutoff side: exclude last 90 days before cutoff
+  cutoff_buffer_post_days: 60  # post-cutoff side: exclude first 60 days after cutoff
+  random_seed: 42
+
+paths:
+  raw: "data/raw/"
+  questions: "data/questions.jsonl"
+  forecasts: "data/forecasts.jsonl"
+  results: "results/"

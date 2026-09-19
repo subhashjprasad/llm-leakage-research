@@ -1,0 +1,87 @@
+question_id,cohort,category,prompt_text,mean_probability,run_stdev,outcome,brier,error_label
+248364,pre_cutoff,other,"Question: Will NATO expand by March 31?
+Description: This is a market on whether the North Atlantic Treaty Organization (NATO) will have more than 30 full member states for any length of time before M",0.892,0.0383,0,0.7957,resolution_criteria
+517554,pre_cutoff,other,"Question: Will Mark Carney be the next leader of the Canadian Liberal Party?
+Description: This market will resolve to ""Yes"" if the first leader of The Liberal Party of Canada following Justin Trudeau ",0.15,0.0,1,0.7225,world_model
+247747,pre_cutoff,other,"Question: Will 'Avatar: The Way of Water' gross more than $650 million domestically by January 31, 2023?
+Description: 'Avatar: The Way of Water' (2022) is an upcoming American action adventure fantasy",0.818,0.0817,0,0.6691,resolution_criteria
+515928,pre_cutoff,other,"Question: Greens win over 15% of vote in German election?
+Description: German Federal elections to elect the 21st Bundestag are scheduled to take place February 23, 2025.
+
+This market will resolve to",0.758,0.0694,0,0.5746,world_model
+248705,pre_cutoff,other,"Question: Will Nikola Jokic win 2023 NBA MVP?
+Description: Nikola Jokic of the Denver Nuggets has won NBA MVP for the past two consecutive years. As of the creation of this market, he is the odds-on f",0.598,0.1119,0,0.3576,world_model
+516714,post_cutoff,other,"Question: Weed rescheduled in 2025?
+Description: This market will resolve to ""Yes"" if marijuana is rescheduled down from I to any other level (or is unscheduled completely) by the Drug Enforcement Age",0.532,0.2574,0,0.283,world_model
+516726,post_cutoff,other,"Question: Will 3 Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal ",0.54,0.1643,1,0.2116,world_model
+247525,pre_cutoff,other,"Question: Will Netanyahu be the next Prime Minister of Israel?
+Description: After the 24th Israeli Knesset (parliament) fell apart in 2022, new legislative elections are scheduled for November 1, 2022",0.604,0.0896,1,0.1568,world_model
+517551,pre_cutoff,other,"Question: Will Chrystia Freeland be the next leader of the Canadian Liberal Party?
+Description: This market will resolve to ""Yes"" if the first leader of The Liberal Party of Canada following Justin Tr",0.384,0.0607,0,0.1475,world_model
+517232,pre_cutoff,other,"Question: Will the Vikings resign Sam Darnold?
+Description: This market refers to the contract status of Sam Darnold with the Minnesota Vikings.
+
+If Sam Darnold resigns an extension with the Minnesota",0.358,0.2046,0,0.1282,world_model
+248481,pre_cutoff,other,"Question: Will Paul Vallas win the 2023 Chicago Mayoral Election?
+Description: The 2023 Chicago Mayoral Election is scheduled to take place on February 28, 2023. If no candidate receives a majority of",0.354,0.0658,0,0.1253,world_model
+248849,pre_cutoff,other,"Question: Will Trump win the 2024 Iowa Caucus?
+Description: This market will resolve to ""Yes"" if former president Donald J. Trump wins the greatest share of apportioned delegates in the 2024 Republica",0.72,0.0,1,0.0784,world_model
+248814,pre_cutoff,other,"Question: Will ChatGPT remain free through April 30?
+Description: This market will resolve to ""Yes"" if any version of ChatGPT remains available free of charge from OpenAI through April 30, 2023, 11:59",0.732,0.0164,1,0.0718,world_model
+516710,post_cutoff,other,"Question: US recession in 2025?
+Description: This market will resolve to "Yes", if either of the following conditions are met:
+
+1.  The National Bureau of Economic Research (NBER) publicly announces t",0.25,0.0212,0,0.0625,overconfident
+516721,post_cutoff,other,"Question: Netanyahu out by 2025?
+Description: This market will resolve to ""Yes"" if Benjamin Netanyahu announces that he will resign as Prime Minister of Israel, or otherwise steps down from/is removed",0.25,0.0,0,0.0625,overconfident
+516723,post_cutoff,other,"Question: Will no Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal",0.25,0.0,0,0.0625,overconfident
+516725,post_cutoff,other,"Question: Will 2 Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal ",0.25,0.0,0,0.0625,overconfident
+516727,post_cutoff,other,"Question: Will 4 Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal ",0.25,0.0,0,0.0625,overconfident
+516728,post_cutoff,other,"Question: Will 5 Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal ",0.25,0.0,0,0.0625,overconfident
+516730,post_cutoff,other,"Question: Will 7 Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal ",0.21,0.0548,0,0.0441,overconfident
+248507,pre_cutoff,other,"Question: Will NATO expand by June 30?
+Description: This is a market on whether the North Atlantic Treaty Organization (NATO) will have more than 30 full member states for any length of time before Ju",0.804,0.0639,1,0.0384,
+516711,post_cutoff,other,"Question: Fed emergency rate cut in 2025?
+Description: This market will resolve to ""Yes"" if the Federal Open Market Committee (FOMC) holds an emergency meeting after which the upper bound of the targe",0.19,0.0548,0,0.0361,
+516719,post_cutoff,other,"Question: Russia x Ukraine ceasefire in 2025?
+Description: This market will resolve to ""Yes"" if there is an official ceasefire agreement, defined as a publicly announced and mutually agreed halt in mi",0.19,0.0548,0,0.0361,
+517552,pre_cutoff,other,"Question: Will Dominic LeBlanc be the next leader of the Canadian Liberal Party?
+Description: This market will resolve to ""Yes"" if the first leader of The Liberal Party of Canada following Justin Trud",0.184,0.0688,0,0.0339,
+516706,post_cutoff,other,"Question: Fed rate hike in 2025?
+Description: This market will resolve to "Yes" if the upper bound of the target federal funds rate is increased at any point between January 1, 2025 and the Fed's Dece",0.15,0.0,0,0.0225,
+516724,post_cutoff,other,"Question: Will 1 Fed rate cut happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal f",0.15,0.0,0,0.0225,
+516729,post_cutoff,other,"Question: Will 8+ Fed rate cuts happen in 2025?
+Description: The FED interest rates are defined in this market by the upper bound of the target federal funds range. The decisions on the target federal",0.15,0.0,0,0.0225,
+517553,pre_cutoff,other,"Question: Will Mélanie Joly be the next leader of the Canadian Liberal Party?
+Description: This market will resolve to ""Yes"" if the first leader of The Liberal Party of Canada following Justin Trudeau",0.136,0.0313,0,0.0185,
+517557,pre_cutoff,other,"Question: Will Sean Fraser be the next leader of the Canadian Liberal Party?
+Description: This market will resolve to ""Yes"" if the first leader of The Liberal Party of Canada following Justin Trudeau ",0.124,0.0288,0,0.0154,
+248831,pre_cutoff,other,"Question: Will Russia use a nuclear weapon by June 30?
+Description: A prediction market on whether Russia will use nuclear weapons has been requested many times recently by esteemed academics and thou",0.08,0.0283,0,0.0064,
+516712,post_cutoff,other,"Question: Tether insolvent in 2025?
+Description: This market will resolve to ""Yes"" if official information released by Tether Limited Inc., official representatives of Tether Limited Inc. (e.g. lawyer",0.08,0.0,0,0.0064,
+516713,post_cutoff,other,"Question: USDT depeg in 2025?
+Description: This market will resolve to "Yes" immediately if all Coinbase 1 minute candles for USDT-USD for any 24 hour period are below 98 cents, for candles between 01",0.08,0.0,0,0.0064,
+248312,pre_cutoff,other,"Question: Will Ali Khamenei remain Supreme Leader of Iran through June 30, 2023?
+Description: This market will resolve to "Yes" if Sayyid Ali Hosseini Khamenei (titled ""Ali Hoseini-KHAMENEI"" on the re",0.926,0.0134,1,0.0055,
+516716,post_cutoff,other,"Question: Khamenei out as Supreme Leader of Iran in 2025?
+Description: This market will resolve to ""Yes"" if Iran's Supreme leader, Ali Khamenei, is removed from power for any length of time between De",0.072,0.0179,0,0.0052,
+516720,post_cutoff,other,"Question: Putin out as President of Russia in 2025?
+Description: This market will resolve to ""Yes"" if Russia's president, Vladimir Putin, is removed from power for any length of time between December ",0.064,0.0219,0,0.0041,
+516715,post_cutoff,other,"Question: Ukraine joins NATO in 2025?
+Description: If Ukraine has officially joined NATO as a full member state at any point by December 31, 2025, 11:59 PM ET this market will resolve to "Yes". Otherw",0.056,0.0329,0,0.0031,
+516717,post_cutoff,other,"Question: Nuclear weapon detonation in 2025?
+Description: This market will resolve to ""Yes"" if a nuclear weapon is detonated anywhere in the world between January 1  and December 31, 2025, 11:59 PM ET",0.039,0.0124,0,0.0015,
+248311,pre_cutoff,other,"Question: Will a nuclear weapon detonate by June 30?
+Description: This market will resolve to ""Yes"" if a nuclear weapon detonates anywhere in the world between January 30, 2023, and June 30, 2023, 11:",0.026,0.0089,0,0.0007,
+248444,pre_cutoff,other,"Question: Will Donald Trump be President of the USA on May 31, 2023?
+Description: This is a market on if Donald Trump will be President of the United States on May 31, 2023, 12:00 PM ET.
+
+This market",0.02,0.0,0,0.0004,

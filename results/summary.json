@@ -1,0 +1,74 @@
+{
+  "hypotheses": {
+    "H1": {
+      "pre_brier": 0.20771199999999998,
+      "post_brier": 0.05400805000000001,
+      "gap": -0.15370394999999998,
+      "ci_95": [
+        -0.28057233822368416,
+        -0.03675112802631576
+      ],
+      "noise_floor_brier": 0.001295224320512472,
+      "conclusion": "gap > noise floor"
+    },
+    "H2_pre_cutoff": {
+      "full_brier": 0.20771199999999998,
+      "stripped_brier": 0.13459142857142858,
+      "gap": -0.05537000000000003,
+      "ci_95": [
+        -0.19546785714285714,
+        0.05914451428571427
+      ]
+    },
+    "H2_post_cutoff": {
+      "full_brier": 0.05400805000000001,
+      "stripped_brier": 0.13841733333333334,
+      "gap": 0.07988594444444444,
+      "ci_95": [
+        0.004256645833333328,
+        0.16620208472222225
+      ]
+    },
+    "H3": {
+      "model_brier": 0.05400805000000001,
+      "baseline_brier": 0.25,
+      "baseline_note": "0.5 uninformed prior (opening crowd price unavailable \u2014 Polymarket Data API does not retain historical prices for resolved markets)",
+      "gap": -0.19599195,
+      "ci_95": [
+        -0.22199186625,
+        -0.161776085
+      ],
+      "conclusion": "model beats baseline"
+    }
+  },
+  "per_cohort_variant": {
+    "pre_cutoff/full": {
+      "n": 19,
+      "brier": 0.2077,
+      "log_loss": 0.6091,
+      "mean_run_stdev": 0.0517
+    },
+    "pre_cutoff/stripped": {
+      "n": 14,
+      "brier": 0.1346,
+      "log_loss": 0.4169,
+      "mean_run_stdev": 0.0171
+    },
+    "post_cutoff/full": {
+      "n": 20,
+      "brier": 0.054,
+      "log_loss": 0.2326,
+      "mean_run_stdev": 0.0346
+    },
+    "post_cutoff/stripped": {
+      "n": 18,
+      "brier": 0.1384,
+      "log_loss": 0.4316,
+      "mean_run_stdev": 0.0356
+    }
+  },
+  "noise_floor": {
+    "mean_within_question_stdev": 0.036,
+    "implied_brier_spread": 0.0013
+  }
+}

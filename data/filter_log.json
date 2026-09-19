@@ -1,0 +1,9 @@
+{
+  "0_raw_loaded": 800,
+  "1_removed_non_binary": 166,
+  "2_removed_low_volume": 165,
+  "3_removed_short_duration": 21,
+  "4_removed_no_price_history": 0,
+  "5_removed_straddling": 58,
+  "6_removed_duplicates": 0
+}
